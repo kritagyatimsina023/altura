@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --color-emotional: #d8c3a5;
+  --color-heading: #171717;
+  --color-core: #fb923c;
+  --color-subheading: #6a7282;
+}
+/* @font-face {
+  font-family: "Neue Montreal";
+  src: url("/font/Neue Montreal/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/font/Roboto_Mono/RobotoMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-subheading: var(--color-subheading);
+  --color-core: var(--color-core) --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-sans: "Neue Montreal", sans-serif;
+  --font-neue: "Neue Montreal", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+body {
+  background: var(--color-background);
+  color: var(--foreground);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+.text-font-color {
+  @apply text-[var(--color-core)];
+}
+.text-font-subheading {
+  @apply text-[var(--color-subheading)];
+}
+.primary-text {
+  @apply font-[var(--font-neue)];
+}
+.spacing {
+  @apply py-10 px-10;
+}
+
+h1,
+h2,
+h3,
+span,
+button,
+a {
+  font-family: "Roboto";
+}
+h1,
+h2,
+h3,
+span,
+button,
+a,
+p {
+  @apply font-neue;
+}
+button {
+  @apply bg-[var(--color-core)];
+}
