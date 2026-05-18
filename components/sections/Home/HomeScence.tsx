@@ -14,10 +14,8 @@ import ProcessSection from "../../../sections/ProcessSection";
 import CTAsection from "../../../sections/CTAsection";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-// import { useScrollRestoration } from "../hooks/usescrollrestoration";
 import { useScrollToTop } from "../../../hooks/UseScrollToTop";
 import Footer from "../../layouts/Footer";
-import ProductCard from "../../cards/ProductCard";
 import NewHeroSection from "./NewHeroSection";
 import ImageOverLapping from "./ImageOverLapping";
 import OurProducts from "./OurProducts";
@@ -26,26 +24,26 @@ const CINEMATIC_HEIGHT_VH = DATA.length * 100;
 
 export default function HomeScene() {
   useScrollToTop();
-  const bgRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const indexRef = useRef<number>(0);
-  const cinematicRef = useRef<HTMLDivElement>(null);
-  // ────────────────────────────────────────────────────────────────
+  // const bgRefs = useRef<(HTMLDivElement | null)[]>([]);
+  // const indexRef = useRef<number>(0);
+  // const cinematicRef = useRef<HTMLDivElement>(null);
+  // // ────────────────────────────────────────────────────────────────
 
-  const setCurrentIndex = useCallback((i: number) => {
-    indexRef.current = i;
-  }, []);
-  const getCurrentIndex = useCallback(() => indexRef.current, []);
-  const { register } = useParallax(getCurrentIndex, DATA.length);
+  // const setCurrentIndex = useCallback((i: number) => {
+  //   indexRef.current = i;
+  // }, []);
+  // const getCurrentIndex = useCallback(() => indexRef.current, []);
+  // const { register } = useParallax(getCurrentIndex, DATA.length);
 
-  const setBgRef = useCallback(
-    (el: HTMLDivElement | null, i: number) => {
-      bgRefs.current[i] = el;
-      if (bgRefs.current.filter(Boolean).length === DATA.length) {
-        register(bgRefs.current as HTMLDivElement[]);
-      }
-    },
-    [register],
-  );
+  // const setBgRef = useCallback(
+  //   (el: HTMLDivElement | null, i: number) => {
+  //     bgRefs.current[i] = el;
+  //     if (bgRefs.current.filter(Boolean).length === DATA.length) {
+  //       register(bgRefs.current as HTMLDivElement[]);
+  //     }
+  //   },
+  //   [register],
+  // );
 
   // const { isCinematic } = useScrollController(
   //   DATA,

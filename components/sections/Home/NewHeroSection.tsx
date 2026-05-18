@@ -6,7 +6,7 @@ const NewHeroSection = () => {
     <section className="relative h-screen w-full bg-[#ffc99c] overflow-hidden">
       <div className="h-screen  w-full">
         <Image
-          src="/mountain/YellowMountain.png"
+          src="/mountain/HeroImage.png"
           fill
           priority
           className="object-cover"
