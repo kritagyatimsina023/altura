@@ -43,3 +43,33 @@ export const FooterData = [
 ];
 
 export const ProductCard = [{ id: 1, name: "Flavoured Bars", price: "$19.99" }];
+
+export const ProductCardData = [
+  {
+    id: 1,
+    name: "Flavoured Bars",
+    price: "$19.99",
+    image: "/product/product-C.webp",
+    imgBgColor: "transparent",
+    description:
+      "natural himalayan yak milk chews with rich flavour from the heart of the mountains.",
+  },
+  {
+    id: 2,
+    name: "Puffed Crunchy Snacks",
+    price: "$14.99",
+    image: "/product/product-B.webp",
+    imgBgColor: "transparent",
+    description:
+      "light airy puffed snacks crafted from leftover churpi for a satisfying crunch.",
+  },
+  {
+    id: 3,
+    name: "Natural Chew Bars and Nuggets",
+    price: "$9.99",
+    image: "/product/product-A.webp",
+    imgBgColor: "transparent",
+    description:
+      "pure slow dried yak cheese bars and nuggets hardened through traditional smoke drying.",
+  },
+];

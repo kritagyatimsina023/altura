@@ -122,7 +122,6 @@ const AlturaEmotional = forwardRef<HTMLElement, AlturaEmotionalProps>(
         overflow-hidden
       "
         >
-          {/* ── Grain overlay — z-40, above everything ── */}
           <div
             className="pointer-events-none absolute inset-0 z-40 opacity-[0.75]"
             style={{
@@ -132,8 +131,6 @@ const AlturaEmotional = forwardRef<HTMLElement, AlturaEmotionalProps>(
               backgroundSize: "128px 128px",
             }}
           />
-
-          {/* All existing content below — wrapped in z-50 so it sits above the grain */}
           <div className="relative z-50 flex flex-col items-center gap-3">
             <SectionHeading className="text-[#050517]">
               The Origin Story
