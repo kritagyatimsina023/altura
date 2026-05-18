@@ -113,7 +113,7 @@ const AboutSection = () => {
       </section>
 
       {/* ── SECTION 4 — Process Editorial Grid ── */}
-      <section className="relative bg-[#EE7C26] overflow-hidden py-24 px-6 sm:px-10 md:px-16">
+      {/* <section className="relative bg-[#EE7C26] overflow-hidden py-24 px-6 sm:px-10 md:px-16">
         <Grainy />
         <div className="relative z-20">
           <div className="flex justify-between items-end mb-16 border-b border-[#0D0F2B]/20 pb-6">
@@ -171,7 +171,7 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── SECTION 5 — Full bleed image: wide himalayan valley ── */}
       <section className="relative min-h-[80vh] flex items-end overflow-hidden">
