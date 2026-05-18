@@ -10,7 +10,7 @@ import { SplitText } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 
 // import Button from "../components/common/Button";
-import SectionHeading from "../../SectionHeading";
+import SectionHeading from "../../Ui/SectionHeading";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 

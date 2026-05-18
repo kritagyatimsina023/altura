@@ -5,7 +5,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import SectionHeading from "../components/SectionHeading";
+import SectionHeading from "../components/Ui/SectionHeading";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);

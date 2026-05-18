@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "../Ui/SectionHeading";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
