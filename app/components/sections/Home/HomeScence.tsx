@@ -1,28 +1,27 @@
 "use client";
 import { useCallback, useRef } from "react";
-import { DATA } from "../constants/data";
-import { useScrollController } from "../hooks/useScrollController";
-import AlturaEmotional from "../sections/AlturaEmotional";
-import AlturaYak from "../sections/AlturaYak";
-import { CinematicSection } from "../sections/CinematicSection";
-import Navbar from "./Navbar";
-import ProgressBar from "./ProgressBar";
-import { useParallax } from "../hooks/useParallex";
-import WhyChooseAltura from "../sections/Facts";
-import EmotionalDog from "../sections/EmotionalDog";
-import ProcessSection from "../sections/ProcessSection";
-import CTAsection from "../sections/CTAsection";
+import { DATA } from "../../../constants/data";
+import { useScrollController } from "../../../hooks/useScrollController";
+import AlturaEmotional from "./AlturaEmotional";
+import AlturaYak from "../../../sections/AlturaYak";
+import { CinematicSection } from "../../../sections/CinematicSection";
+import Navbar from "../../layouts/Navbar";
+import ProgressBar from "../../ProgressBar";
+import { useParallax } from "../../../hooks/useParallex";
+import WhyChooseAltura from "../../../sections/Facts";
+import EmotionalDog from "../../../sections/EmotionalDog";
+import ProcessSection from "../../../sections/ProcessSection";
+import CTAsection from "../../../sections/CTAsection";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 // import { useScrollRestoration } from "../hooks/usescrollrestoration";
-import { useScrollToTop } from "../hooks/UseScrollToTop";
-import Footer from "../sections/Footer";
-import ProductCard from "./ProductCard";
+import { useScrollToTop } from "../../../hooks/UseScrollToTop";
+import Footer from "../../layouts/Footer";
+import ProductCard from "../../cards/ProductCard";
 import NewHeroSection from "./NewHeroSection";
-import ImageOverLapping from "../sections/ImageOverLapping";
-
+import ImageOverLapping from "./ImageOverLapping";
+import OurProducts from "./OurProducts";
 gsap.registerPlugin(ScrollTrigger);
-
 const CINEMATIC_HEIGHT_VH = DATA.length * 100;
 
 export default function HomeScene() {
@@ -100,8 +99,9 @@ export default function HomeScene() {
           {/* <WhyChooseAltura />
           <AlturaYak />
           <EmotionalDog /> */}
+          <OurProducts />
           <ProcessSection />
-          <ProductCard />
+          {/* <ProductCard /> */}
           <CTAsection />
           <Footer />
         </div>

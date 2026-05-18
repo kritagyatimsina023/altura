@@ -41,3 +41,5 @@ export const FooterData = [
     links: ["Blog", "Contact", "Wholesale", "Careers"],
   },
 ];
+
+export const ProductCard = [{ id: 1, name: "Flavoured Bars", price: "$19.99" }];

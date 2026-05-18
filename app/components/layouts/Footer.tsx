@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { FooterData } from "../constants/data";
+import { FooterData } from "../../constants/data";
 
 const Footer = () => {
   const [email, setEmail] = useState("");

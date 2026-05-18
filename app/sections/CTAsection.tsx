@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useRef } from "react";
-import Button from "../components/Button";
-import Footer from "./Footer";
+import Button from "../components/common/Button";
+import Footer from "../components/layouts/Footer";
 
 const CTAsection = () => {
   const videoRef = useRef<HTMLVideoElement>(null);

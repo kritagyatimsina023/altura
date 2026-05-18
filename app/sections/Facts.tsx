@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
-import Button from "../components/Button";
+import Button from "../components/common/Button";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
