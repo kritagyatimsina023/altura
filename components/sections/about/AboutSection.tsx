@@ -7,33 +7,35 @@ const AboutSection = () => {
     <>
       <section className="relative min-h-screen flex flex-col justify-between px-6 sm:px-10 md:px-16 pt-24 pb-16 overflow-hidden">
         <Grainy />
-        <div className="relative z-20 flex justify-between items-start text-[10px] uppercase tracking-[0.25em] font-mono text-[#0D0F2B]/60">
-          <span>Altura Dog Chew</span>
-          <span>Est. Nepal — Himalayas</span>
-        </div>
-        <div className="relative z-20 mt-16 md:mt-0">
-          <h1 className="font-serif leading-[0.88] tracking-tight">
-            <span className="block text-[clamp(4rem,14vw,13rem)] font-normal">
-              FROM
-            </span>
-            <span className="block text-[clamp(4rem,14vw,13rem)] font-normal italic pl-[8vw]">
-              YAK
-            </span>
-            <span className="block text-[clamp(4rem,14vw,13rem)] font-normal">
-              TO DOG.
-            </span>
-          </h1>
-        </div>
-        <div className="relative z-20 flex flex-col sm:flex-row justify-between items-end gap-6 mt-12">
-          <p className="font-mono text-xs tracking-widest uppercase text-[#0D0F2B]/70 max-w-xs leading-relaxed">
-            A long lasting yak milk chew
-            <br />
-            from the heart of the Himalayas
-          </p>
-          <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#0D0F2B]/50 text-right">
-            <p>100% Natural</p>
-            <p>No Chemicals</p>
-            <p>No Fillers</p>
+        <div className="relative z-30">
+          <div className="relative z-20 flex justify-between items-start text-[10px] uppercase tracking-[0.25em] font-mono text-[#0D0F2B]/60">
+            <span>Altura Dog Chew</span>
+            <span>Est. Nepal — Himalayas</span>
+          </div>
+          <div className="relative z-20 mt-16 md:mt-0">
+            <h1 className="font-serif leading-[0.88] tracking-tight">
+              <span className="block text-[clamp(4rem,14vw,13rem)] font-normal">
+                FROM
+              </span>
+              <span className="block text-[clamp(4rem,14vw,13rem)] font-normal italic pl-[8vw]">
+                YAK
+              </span>
+              <span className="block text-[clamp(4rem,14vw,13rem)] font-normal">
+                TO DOG.
+              </span>
+            </h1>
+          </div>
+          <div className="relative z-20 flex flex-col sm:flex-row justify-between items-end gap-6 mt-12">
+            <p className="font-mono text-xs tracking-widest uppercase text-[#0D0F2B]/70 max-w-xs leading-relaxed">
+              A long lasting yak milk chew
+              <br />
+              from the heart of the Himalayas
+            </p>
+            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-[#0D0F2B]/50 text-right">
+              <p>100% Natural</p>
+              <p>No Chemicals</p>
+              <p>No Fillers</p>
+            </div>
           </div>
         </div>
       </section>
